@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row bg-info pt-2 pb-4 mb-4">
+        <h1>Campings de Andalucía</h1>
+        <div class="col" *ngFor="let provincia of provincias">
+            <button    (click)="mostrarCampingsProvincia(provincia)" class="btn btn-warning">
+              {{ provincia.nombre}}
+            </button>
+        </div>
+    </div>
+    <div class="row bg-danger" *ngIf="dbError">
+        <div class="col text-center">ERROR DE CONEXIÓN A LA BASE DE DATOS</div>
+    </div>
+    <div class="row">
+        <div class="col-9">
+            <h2>Campings de {{provincia_seleccionada.nombre}} (al pulsar botón de provincia)</h2>
+        </div>
+        <div class="col-3">
+            <button  class="btn btn-primary">Nuevo camping</button>
+        </div>
+    </div>
+    <div class="row t_header" >
+        <div class="col-2">
+            <em>Camping</em>
+        </div>
+        <div class="col-2">
+            <em>Categoría</em>
+        </div>
+        <div class="col-2">
+            <em>Acciones</em>
+        </div>
+    </div>
+    <div class="row mt-2"
+        *ngFor="let camping of campings">
+        <div class="col-2">
+            {{camping.nombre}}
+        </div>
+        <div class="col-2">
+            {{ camping.categoria }}
+        </div>
+        <div class="col-2 btn-group" role="group">
+            <button [routerLink]="[ '/campings', camping.id]" class="btn btn-warning inline mx-4">Editar</button>
+            <button (click)="eliminarCamping(camping)" class="btn btn-danger inline">Eliminar</button>
+        </div>
+    </div>
+</div>

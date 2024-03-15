@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="row mt-4 mb-4">
+        <div class="col">
+            <h4>{{ servicio }}</h4>
+        </div>
+        <div class="col">
+
+            <h4>{{ activo }}</h4>
+        </div>
+        <div class="col">
+
+            <button (click)="cambiarEstado()" type="button"
+                    [ngClass]="(activo ? 'bg-danger' : 'bg-success')"
+                   >
+
+              {{textoBotonDesactivar}}
+            </button>
+
+
+        </div>
+    </div>
+</div>

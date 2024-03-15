@@ -1,0 +1,9 @@
+.valorinvalido {
+    border-color: red;
+    border-width: 1px;
+    background-color: lightpink;
+}
+
+small {
+    color:red;
+}

@@ -1,0 +1,37 @@
+<div class="container">
+<h1>Formulario de nuevo camping</h1>
+<h1>Formulario de edición de camping</h1>
+<div class="row"><div class="col" >ERROR AL CREAR CAMPING. ESPERA UN POCO Y VUELVE A INTENTAR.</div></div>
+<form>
+    <div class="mb-3 mt-3">
+        <label for="id" class="form-label">Código de camping (id):</label>
+        <div><small>El código debe ser mayor de 0 y único.</small></div>
+        <input type="text" class="form-control" id="id"
+                placeholder="Código de camping">
+      </div>
+    <div class="mb-3 mt-3">
+      <label for="nombre" class="form-label">Nombre:</label>
+      <div><small>El nombre es obligatorio.</small></div>
+      <input type="text" class="form-control" id="nombre"
+                placeholder="Nombre de camping">
+    </div>
+    <div class="mb-3">
+      <label for="categoria" class="form-label">Categoría:</label>
+      <div><small>La categoría debe estar entre 1 y 3.</small></div>
+      <input type="number" class="form-control" id="categoria">
+    </div>
+    <div class="mb-3">
+        <label  class="form-label">Provincia:</label>
+        <div><small>Debe seleccionar una provincia.</small></div>
+        <select class="form-select">
+            <option disabled value="0">Seleccione una provincia</option>
+            <option>
+                NOMBREPROVINCIAS
+            </option>
+          </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+
+    <button type="button" class="btn btn-warning mx-4">Cancelar</button>
+  </form>
+</div>

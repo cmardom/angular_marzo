@@ -1,0 +1,134 @@
+{
+  "provincias": [
+    {
+      "id": 29,
+      "nombre": "Málaga"
+    },
+    {
+      "id": 11,
+      "nombre": "Cádiz"
+    },
+    {
+      "id": 18,
+      "nombre": "Granada"
+    },
+    {
+      "id": 42,
+      "nombre": "Sevilla"
+    },
+    {
+      "id": 21,
+      "nombre": "Huelva"
+    },
+    {
+      "id": 23,
+      "nombre": "Jaén"
+    },
+    {
+      "id": 4,
+      "nombre": "Almería"
+    },
+    {
+      "id": 14,
+      "nombre": "Córdoba"
+    }
+  ],
+  "campings": [
+    {
+      "id": 2,
+      "nombre": "Jábega",
+      "provincia": 21,
+      "categoria": 1
+    },
+    {
+      "id": 3,
+      "nombre": "Herradura",
+      "provincia": 18,
+      "categoria": 2
+    },
+    {
+      "id": 4,
+      "nombre": "Puntales",
+      "provincia": 21,
+      "categoria": 2
+    },
+    {
+      "id": 5,
+      "nombre": "Pino",
+      "provincia": 29,
+      "categoria": 1
+    },
+    {
+      "id": 6,
+      "nombre": "Sierra",
+      "provincia": 18,
+      "categoria": 3
+    },
+    {
+      "id": 7,
+      "nombre": "Rocío",
+      "provincia": 42,
+      "categoria": 2
+    },
+    {
+      "id": 8,
+      "nombre": "Giralda",
+      "provincia": 42,
+      "categoria": 2
+    },
+    {
+      "id": 9,
+      "nombre": "Jarcha",
+      "provincia": 23,
+      "categoria": 1
+    },
+    {
+      "id": 10,
+      "nombre": "Sur",
+      "provincia": 23,
+      "categoria": 3
+    },
+    {
+      "id": 11,
+      "nombre": "Tanguillo",
+      "provincia": 11,
+      "categoria": 1
+    },
+    {
+      "id": 12,
+      "nombre": "Los Rosales",
+      "provincia": 11,
+      "categoria": 1
+    },
+    {
+      "id": 13,
+      "nombre": "Perales",
+      "provincia": 14,
+      "categoria": 2
+    },
+    {
+      "id": 14,
+      "nombre": "Ventolera",
+      "provincia": 14,
+      "categoria": 2
+    },
+    {
+      "id": 13,
+      "nombre": "Acabose",
+      "provincia": 4,
+      "categoria": 3
+    },
+    {
+      "id": 14,
+      "nombre": "Perdigueros",
+      "provincia": 4,
+      "categoria": 1
+    },
+    {
+      "id": "22",
+      "nombre": "La Huerta",
+      "categoria": 1,
+      "provincia": "29"
+    }
+  ]
+}

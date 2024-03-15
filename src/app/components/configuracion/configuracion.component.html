@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3 bg-info">
+            <h4>Servicios activos</h4>
+            <button class="btn btn-danger" (click)="desactivarTodo()">Desactivar todo</button>
+            <ul  *ngFor="let item of itemsActivosVariable; let i = index">
+
+              <li>
+                {{item.servicio}}
+
+
+              </li>
+            </ul>
+        </div>
+        <div class="col-9 bg-secondary">
+            <h4>Desactivar servicios</h4>
+            <app-item-configuracion
+                *ngFor="let item of items; let i = index"
+                [servicio]="item.servicio"
+                [activo] = "item.activo"
+
+            ></app-item-configuracion>
+        </div>
+    </div>
+
+</div>
